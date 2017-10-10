@@ -1,3 +1,4 @@
+# Created by .ignore support plugin (hsz.mobi)
 # Eclipse
 .classpath
 .project
@@ -12,5 +13,5 @@
 .DS_Store
 
 # Output
-/target/
+*/target/
 /test-output/
