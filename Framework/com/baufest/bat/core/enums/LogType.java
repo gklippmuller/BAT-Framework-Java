@@ -11,6 +11,8 @@ public enum LogType {
     ERROR("ERROR"),
     FATAL("FATAL"),
     WARNING("WARNING"),
+    SKIP("SKIP"),
+    START("START"),
     PREFIX(">>>");
 
     LogType(String element) {

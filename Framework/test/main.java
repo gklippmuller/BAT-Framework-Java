@@ -10,10 +10,15 @@ public class main {
 
     public static void main (String [ ] args) {
 
-        logManager.logInfo("INFOOOO");
-        logManager.logFatal("FATALLL");
+        logManager.startTest("test1","descrip","category","miguel","message");
+
+        logManager.logInfo("PASO 1");
+        logManager.logInfo("PASO 2");
+        logManager.logInfo("PASO 3");
+        logManager.logInfo("PASO 4");
         logManager.logError("ERRORRRR");
-        logManager.logWarning("WARNINGGGG");
+
+        logManager.endTest();
 
     }
 }
