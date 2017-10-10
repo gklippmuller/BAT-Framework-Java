@@ -1,9 +1,9 @@
-package com.baufest.bat.core.logging;
+package com.baufest.bat.core.helpers.logging;
 
 import com.baufest.bat.core.enums.LogType;
-import com.baufest.bat.core.logging.LogManager;
-import com.baufest.bat.core.logging.logging.ExtendedReport;
-import com.baufest.bat.core.logging.logging.FileLogger;
+import com.baufest.bat.core.helpers.logging.LogManager;
+import com.baufest.bat.core.helpers.logging.logging.ExtendedReport;
+import com.baufest.bat.core.helpers.logging.logging.FileLogger;
 
 public class LogManager {
 

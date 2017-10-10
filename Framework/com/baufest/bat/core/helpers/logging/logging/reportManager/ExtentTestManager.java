@@ -1,4 +1,4 @@
-package com.baufest.bat.core.logging.logging.reportManager;
+package com.baufest.bat.core.helpers.logging.logging.reportManager;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

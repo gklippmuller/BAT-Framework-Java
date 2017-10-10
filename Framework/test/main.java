@@ -1,7 +1,6 @@
 package test;
 
-import com.baufest.bat.core.enums.LogType;
-import com.baufest.bat.core.logging.LogManager;
+import com.baufest.bat.core.helpers.logging.LogManager;
 
 public class main {
 

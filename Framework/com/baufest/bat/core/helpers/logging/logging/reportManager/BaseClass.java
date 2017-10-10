@@ -1,5 +1,6 @@
-package com.baufest.bat.core.logging.logging.reportManager;
+package com.baufest.bat.core.helpers.logging.logging.reportManager;
 
+import com.baufest.bat.core.helpers.logging.logging.reportManager.ExtentTestManager;
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;

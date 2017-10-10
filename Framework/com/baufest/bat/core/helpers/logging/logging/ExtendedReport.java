@@ -1,6 +1,6 @@
-package com.baufest.bat.core.logging.logging;
+package com.baufest.bat.core.helpers.logging.logging;
 
-import com.baufest.bat.core.logging.BaseLogger;
+import com.baufest.bat.core.helpers.logging.BaseLogger;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtendedReport extends BaseLogger {
