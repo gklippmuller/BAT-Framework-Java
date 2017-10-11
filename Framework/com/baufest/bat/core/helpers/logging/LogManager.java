@@ -4,6 +4,7 @@ import com.baufest.bat.core.enums.LogType;
 import com.baufest.bat.core.helpers.logging.LogManager;
 import com.baufest.bat.core.helpers.logging.logging.ExtendedReport;
 import com.baufest.bat.core.helpers.logging.logging.FileLogger;
+import org.openqa.selenium.WebDriver;
 
 public class LogManager {
 
@@ -36,7 +37,11 @@ public class LogManager {
         fileLogger.logger(message, LogType.INFO.element());
         extendedReport.report(message,LogType.INFO.element());
     }
+    public void logPass(String message) {
 
+        fileLogger.logger(message, LogType.PASS.element());
+        extendedReport.report(message,LogType.PASS.element());
+    }
     public void logWarning(String message) {
 
         fileLogger.logger(message, LogType.WARNING.element());

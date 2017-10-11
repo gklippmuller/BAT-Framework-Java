@@ -19,6 +19,9 @@ public class FileLogger extends BaseLogger {
 		        case "INFO":
 			        logger.info(message);
 			        break;
+		        case "PASS":
+			        logger.info(message);
+			        break;
 		        case "ERROR":
 			        logger.error(message);
 			        break;

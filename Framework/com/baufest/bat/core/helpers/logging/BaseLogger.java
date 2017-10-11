@@ -4,6 +4,7 @@ import com.baufest.bat.core.helpers.logging.logging.FileLogger;
 import com.baufest.bat.core.helpers.logging.logging.reportManager.ExtentManager;
 import org.apache.log4j.Logger;
 import com.baufest.bat.core.helpers.logging.logging.reportManager.ExtentTestManager;
+import com.baufest.bat.core.readFiles.GetXMLfile;
 
 
 public class BaseLogger {
@@ -12,4 +13,5 @@ public class BaseLogger {
     public static Logger logger = Logger.getLogger(FileLogger.class);
     public static ExtentTestManager extent;
     public static ExtentManager extentManager;
+    public static GetXMLfile getXMLfile;
 }

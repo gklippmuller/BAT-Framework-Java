@@ -2,6 +2,7 @@ package com.baufest.bat.core.helpers.logging.logging;
 
 import com.baufest.bat.core.helpers.logging.BaseLogger;
 import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.WebDriver;
 
 public class ExtendedReport extends BaseLogger {
 
@@ -10,22 +11,28 @@ public class ExtendedReport extends BaseLogger {
         {
             switch (iType) {
                 case "PASS":
-                    extent.getTest().log(LogStatus.PASS, message);
+                        extent.getTest().log(LogStatus.PASS, message);
+
                     break;
                 case "INFO":
-                    extent.getTest().log(LogStatus.INFO, message);
+                        extent.getTest().log(LogStatus.INFO, message);
+
                     break;
                 case "WARNING":
-                    extent.getTest().log(LogStatus.WARNING, message);
+                        extent.getTest().log(LogStatus.WARNING, message);
+
                     break;
                 case "ERROR":
-                    extent.getTest().log(LogStatus.ERROR, message);
+                        extent.getTest().log(LogStatus.ERROR, message);
+
                     break;
                 case "FATAL":
-                    extent.getTest().log(LogStatus.FATAL, message);
+                        extent.getTest().log(LogStatus.FATAL, message);
+
                     break;
                 case "SKIP":
-                    extent.getTest().log(LogStatus.SKIP, message);
+                        extent.getTest().log(LogStatus.SKIP, message);
+
                     break;
                 default:
 
@@ -58,6 +65,14 @@ public class ExtendedReport extends BaseLogger {
             extentManager.getReporter().endTest(extent.getTest());
             extentManager.getReporter().flush();
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void reportWithScreen(String pathScreen) {
+        try
+        {
+            extent.getTest().log(LogStatus.INFO, extent.getTest().addScreenCapture(pathScreen));
         } catch (Exception e) {
             e.printStackTrace();
         }

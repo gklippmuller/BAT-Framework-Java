@@ -12,6 +12,7 @@ public enum LogType {
     FATAL("FATAL"),
     WARNING("WARNING"),
     SKIP("SKIP"),
+    PASS("PASS"),
     START("START"),
     PREFIX(">>>");
 
