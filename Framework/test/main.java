@@ -29,20 +29,19 @@ public class main {
         logManager.logInfo("Inserta La Clave");
         logManager.logInfo("Click en el Boton Login");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "hola");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "screenName");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "test");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "test2");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "dsddsdssd");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "fdss");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
-        logManager.logPass("Validado Exitosamente");
+
 
 
 
