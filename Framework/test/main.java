@@ -18,8 +18,8 @@ public class main {
 
     public static void main (String [ ] args) throws Exception {
 
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/conf/resources/ChromeDriver/win/chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/conf/resources/FirefoxDriver/win/geckodriver.exe");
+        driver = new FirefoxDriver();
 
         Thread.sleep(3000);
 
