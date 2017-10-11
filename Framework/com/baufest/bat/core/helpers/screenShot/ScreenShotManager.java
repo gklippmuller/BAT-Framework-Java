@@ -18,10 +18,10 @@ GetXMLfile getXMLfile = new GetXMLfile();
 
 
 
-public void screenShot(WebDriver driver) throws Exception {
+public void screenShot(WebDriver driver, String screenShotName) throws Exception {
 
     String capture = getXMLfile.GetConfigProperties("take.screenshot");
-    String pathScreenShot = takeScreenShot.getScreenshot(driver, "login");
+    String pathScreenShot = takeScreenShot.getScreenshot(driver, screenShotName);
     logManager.logInfo("Se Realizo una Captura de Pantalla Exitosamente");
     if(capture.equals("true")) {
         extendedReport.reportWithScreen(pathScreenShot);

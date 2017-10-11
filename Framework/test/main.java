@@ -18,8 +18,8 @@ public class main {
 
     public static void main (String [ ] args) throws Exception {
 
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/conf/resources/ChromeDriver/win/chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/conf/resources/FirefoxDriver/win/geckodriver.exe");
+        driver = new FirefoxDriver();
 
         Thread.sleep(3000);
 
@@ -29,20 +29,19 @@ public class main {
         logManager.logInfo("Inserta La Clave");
         logManager.logInfo("Click en el Boton Login");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "hola");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "screenName");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "test");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "test2");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "dsddsdssd");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
+        screenShotManager.screenShot(driver, "fdss");
         logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver);
-        logManager.logPass("Validado Exitosamente");
+
 
 
 
