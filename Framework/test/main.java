@@ -24,7 +24,6 @@ public class main {
         logManager.logInfo("dssdsddsdsds");
         logManager.logInfo("dssdsddsdsds");
         logManager.logInfo("dssdsddsdsds");
-        screenShotManager.screenShot(browserHelper.getDriver(), "perfecto_papa");
         logManager.logPass("paso perfecto");
 
         browserHelper.resetBrowser();
