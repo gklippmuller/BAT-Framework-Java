@@ -3,7 +3,24 @@
 <properties>
 
 
-    <entry key="take.screenshot">true</entry>
+    <entry key="take.screenshot">false</entry>
+    <entry key="browser">chrome</entry>
+    <entry key="os">win</entry>
+    <entry key="url">https://www.google.com</entry>
+
+
+
+
+
+    <entry key="firefox.win">/conf/resources/FirefoxDriver/win/geckodriver.exe</entry>
+    <entry key="firefox.mac">/conf/resources/FirefoxDriver/mac/geckodriver</entry>
+    <entry key="chrome.win">/conf/resources/ChromeDriver/win/chromedriver.exe</entry>
+    <entry key="chrome.mac">/conf/resources/ChromeDriver/mac/chromedriver</entry>
+
+
+
+
+
 
 
 

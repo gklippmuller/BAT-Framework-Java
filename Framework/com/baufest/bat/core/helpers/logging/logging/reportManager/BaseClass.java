@@ -1,20 +1,22 @@
 package com.baufest.bat.core.helpers.logging.logging.reportManager;
 
-import com.baufest.bat.core.helpers.logging.logging.reportManager.ExtentTestManager;
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
+/**
+ Report Base Class
+ * Created by Miguel D'Alessio
+ * on 09/10/2017.
+ */
 public abstract class BaseClass {
 
-  /*  @BeforeMethod
-    public void beforeMethod(Method method) {
-        ExtentTestManager.startTest(method.getName());
-    }*/
-
+    /**
+     Cycle test result
+     @param result
+     */
     @AfterMethod
     protected void afterMethod(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {

@@ -1,9 +1,9 @@
 package com.baufest.bat.core.enums;
 
-;
 /**
+ implements enumerated operations
  * Created by Miguel D'Alessio
- * on 21/9/2017.
+ * on 11/10/2017.
  */
 public enum LogType {
 

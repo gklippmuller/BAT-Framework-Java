@@ -6,7 +6,11 @@ import org.apache.log4j.Logger;
 import com.baufest.bat.core.helpers.logging.logging.reportManager.ExtentTestManager;
 import com.baufest.bat.core.readFiles.GetXMLfile;
 
-
+/**
+ Base Logger
+ * Created by Miguel D'Alessio
+ * on 08/10/2017.
+ */
 public class BaseLogger {
 
     private static BaseLogger instance = null;

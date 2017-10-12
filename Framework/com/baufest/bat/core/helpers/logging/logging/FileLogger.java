@@ -3,13 +3,23 @@ package com.baufest.bat.core.helpers.logging.logging;
 import com.baufest.bat.core.helpers.logging.BaseLogger;
 import org.apache.log4j.PropertyConfigurator;
 
+/**
+ File Logger Implementation (logger.log)
+ * Created by Miguel D'Alessio
+ * on 08/10/2017.
+ */
 public class FileLogger extends BaseLogger {
 
 	public FileLogger() {
 		
 		super();
 	}
-
+	/**
+	 Write a message to the console and to the .log file
+	 @param message
+	 @param iType
+	 @throws Exception
+	 */
 	public void logger(String message, String iType) {
 
         try

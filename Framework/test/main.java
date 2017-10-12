@@ -1,57 +1,34 @@
 package test;
 
+import com.baufest.bat.core.helpers.browser.BrowserHelper;
 import com.baufest.bat.core.helpers.logging.LogManager;
 import com.baufest.bat.core.helpers.screenShot.ScreenShotManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class main {
 
     static LogManager logManager = new LogManager();
     static ScreenShotManager screenShotManager = new ScreenShotManager();
-
-    private static WebDriver driver;
-
-
+    static BrowserHelper browserHelper = new BrowserHelper();
 
 
     public static void main (String [ ] args) throws Exception {
 
-        System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/conf/resources/FirefoxDriver/win/geckodriver.exe");
-        driver = new FirefoxDriver();
 
         Thread.sleep(3000);
 
+        browserHelper.setupBrowser();
+        browserHelper.navigateTo();
         logManager.startTest("Login Valido","descrip","category","miguel","Inicio del Caso de Prueba 'HOLA MUNDO'");
-        logManager.logInfo("Click en Login");
-        logManager.logInfo("Inserta el Usuario");
-        logManager.logInfo("Inserta La Clave");
-        logManager.logInfo("Click en el Boton Login");
-        logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver, "hola");
-        logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver, "screenName");
-        logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver, "test");
-        logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver, "test2");
-        logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver, "dsddsdssd");
-        logManager.logPass("Validado Exitosamente");
-        screenShotManager.screenShot(driver, "fdss");
-        logManager.logPass("Validado Exitosamente");
 
+        logManager.logInfo("dssdsddsdsds");
+        logManager.logInfo("dssdsddsdsds");
+        logManager.logInfo("dssdsddsdsds");
+        logManager.logInfo("dssdsddsdsds");
+        screenShotManager.screenShot(browserHelper.getDriver(), "perfecto_papa");
+        logManager.logPass("paso perfecto");
 
-
-
-
-
-
-
-
-
-
+        browserHelper.resetBrowser();
+        browserHelper.closeBrowser();
 
         logManager.endTest();
 
