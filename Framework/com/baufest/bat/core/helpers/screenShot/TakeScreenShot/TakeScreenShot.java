@@ -9,11 +9,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by miguel on 4/9/17.
+ Take ScreenShot
+ * Created by Miguel D'Alessio
+ * on 10/10/2017.
  */
 public class TakeScreenShot {
 
-
+    /**
+     take a screen capture to save it in the path 'destination'
+     @param driver
+     @param screenshotName
+     @return destination
+     @throws Exception
+     */
     public String getScreenshot(WebDriver driver, String screenshotName) throws Exception {
         //below line is just to append the date format with the screenshot name to avoid duplicate names
         String dateName = new SimpleDateFormat("yyyy-MMdd-hh-mm-ss").format(new Date());

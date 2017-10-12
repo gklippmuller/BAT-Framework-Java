@@ -14,7 +14,7 @@ public class GetXMLfile {
 
     /**
      * Read XML Config Properties
-     * @author Miguel D'Alessio
+     * @param propertyConf
      * */
     public String GetConfigProperties(String propertyConf) throws IOException{
 
